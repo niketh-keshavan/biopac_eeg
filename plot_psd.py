@@ -4,7 +4,7 @@ from scipy.signal import welch
 import sys
 import os
 
-def plot_psd(files, duration=50, fmin=0.5, fmax=40):
+def plot_psd(files, duration=50, fmin=0, fmax=35):
     """
     Compute and plot EEG Power Spectral Density (PSD) for multiple files
     using a Hamming window, limited to 0.5–40 Hz, first 50 seconds.
